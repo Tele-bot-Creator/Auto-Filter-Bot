@@ -113,13 +113,13 @@ OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '7305347700@pytes')
 
 # for stream
 IS_STREAM = is_enabled('IS_STREAM', False)
-BIN_CHANNEL = environ.get("BIN_CHANNEL", "")
+BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002207417755")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
     exit()
 else:
     BIN_CHANNEL = int(BIN_CHANNEL)
-URL = environ.get("URL", "")
+URL = environ.get("URL", "https://identical-spider-tg-guy-d1e3bf89.koyeb.app/")
 if len(URL) == 0:
     print('Error - URL is missing, exiting now')
     exit()
